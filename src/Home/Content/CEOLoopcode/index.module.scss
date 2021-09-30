@@ -1,0 +1,88 @@
+.thanksMessage {
+  background: #ffffff;
+  padding: 130px 0px 170px;
+  border-bottom: 1px solid rgba(31, 140, 235, 0.3);
+  overflow: hidden;
+  .thanksMessageContainer {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+    .outerContainer {
+      position: relative;
+      .thanksText {
+        font-size: 21px;
+        font-weight: 300;
+        line-height: 1.4em;
+        color: #3b566e;
+        font-style: italic;
+        @media (max-width: 599px) {
+          font-size: 20px;
+        }
+      }
+
+      .ceoProfile {
+        padding-top: 25px;
+        text-align: right !important;
+        @media (max-width: 1023px) {
+          text-align: left !important;
+          padding: 40px 0 20px;
+        }
+        .ceoInfo {
+          position: relative;
+          text-align: left;
+          display: inline-block;
+          min-height: 66px;
+          padding-top: 10px;
+          padding-left: 96px;
+          font-size: 14px;
+          color: #6f8ba4;
+          .thumImage {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            width: 66px;
+            height: 66px;
+            border: 1px solid #1f8ceb;
+            border-radius: 50%;
+            > h4 {
+              font-size: 17px;
+              color: #3b566e;
+            }
+          }
+        }
+      }
+    }
+    .outerContainer::before {
+      content: "";
+      position: absolute;
+      right: -230px;
+      bottom: -160px;
+      width: 660px;
+      height: 670px;
+      background: url(../../../image/thanks-bg.png) center right no-repeat;
+    }
+    .dots {
+      position: absolute;
+      left: 0px;
+      bottom: -60px;
+      .dot {
+        display: inline-block;
+        margin-right: 10px;
+        > span {
+          display: block;
+          width: 14px;
+          height: 14px;
+          border: 2px solid #1f8ceb;
+          border-radius: 50%;
+          transition: all 500ms ease;
+          transform: scale(0.7);
+        }
+      }
+      .active {
+        > span {
+          transform: scale(1);
+        }
+      }
+    }
+  }
+}

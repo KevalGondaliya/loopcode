@@ -1,0 +1,144 @@
+.contact {
+  position: relative;
+  background: #ffffff;
+  padding: 130px 0px 100px;
+  .container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+    .infoDetails {
+      @media (max-width: 1023px) {
+        display: block !important;
+      }
+
+      .innerText {
+        margin-top: 170px;
+        .title {
+          margin-bottom: 40px;
+          padding-bottom: 25px;
+          margin-top: -10px;
+          > h2 {
+            font-size: 30px;
+            color: #3b566e;
+            font-weight: 300;
+            line-height: 1.4em;
+            margin: 0;
+            > img {
+              max-width: 100%;
+              width: 40px;
+            }
+          }
+          .info {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            > li {
+              font-size: 18px;
+              line-height: 1.6em;
+              font-weight: 300;
+              margin-left: 45px;
+              padding-top: 5px;
+            }
+          }
+          .social {
+            margin-left: 40px;
+            list-style: none;
+            padding: 0;
+            > li {
+              display: inline-block;
+              > a {
+                width: 40px;
+                height: 40px;
+                margin-left: 5px;
+                border-radius: 50px;
+                display: block;
+                text-align: center;
+
+                > img {
+                  width: 40px;
+                  height: 40px;
+                  border-radius: 50px;
+                }
+              }
+              .sFacebook {
+                background-color: #3a559f;
+                color: #fff;
+              }
+              .sLinkedIn {
+                background-color: #0172b1;
+                color: #fff;
+              }
+              .sTwitter {
+                background-color: #55acee;
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+    }
+    .formColumn {
+      .secTitle {
+        margin-bottom: 40px;
+        padding-bottom: 25px;
+        margin-top: -10px;
+        > h2 {
+          position: relative;
+          font-size: 30px;
+          color: #3b566e;
+          font-weight: 300;
+          line-height: 1.4em;
+          margin: 0;
+        }
+        .decText {
+          font-size: 18px;
+          line-height: 1.6em;
+          font-weight: 300;
+          padding-top: 15px;
+        }
+      }
+      .contactForm {
+        .formGroup {
+          margin-bottom: 30px;
+          > input {
+            height: 50px;
+            line-height: 28px;
+            padding: 10px 25px;
+            font-size: 18px;
+            border: 1px solid rgba(31, 140, 235, 0.5);
+            color: #6f8ba4;
+            border-radius: 4px;
+            transition: all 500ms ease;
+          }
+          > textarea {
+            height: 100px;
+            padding: 10px 25px;
+            font-size: 18px;
+            color: #6f8ba4;
+            border-radius: 4px;
+            border: 1px solid rgba(31, 140, 235, 0.5);
+          }
+          > button {
+            height: 50px;
+            padding: 10px 32px;
+            font-size: 16px;
+            border-radius: 4px;
+            border: 1px solid #1f8ceb;
+            color: #3b566e;
+            background: #f4f9fe;
+          }
+        }
+      }
+    }
+  }
+}
+.contact::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  margin-left: -40px;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background: url(../image/bg-shape-five.png) right center no-repeat;
+}

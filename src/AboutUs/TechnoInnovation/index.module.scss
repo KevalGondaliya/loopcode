@@ -1,0 +1,43 @@
+.technologyServices {
+  padding-top: 200px;
+  .technologyContainer {
+    max-width: 1200px;
+    padding: 0px 15px;
+    margin: 0 auto;
+    .innerPartText {
+      @media (max-width: 768px) {
+        margin-bottom: 40px;
+        text-align: center;
+      }
+      > h2 {
+        color: #323d47;
+        font-weight: 300;
+        margin: 0;
+        background: none;
+        line-height: 2rem;
+        font-size: 30px;
+        .techno {
+          color: #4457a9;
+          font-weight: 400;
+        }
+        .digital {
+          color: #0e7b72;
+          font-weight: 400;
+        }
+      }
+      > p {
+        line-height: 1.9;
+        color: #757575;
+        font-weight: 300;
+        margin-bottom: 5rem !important;
+        margin-top: 2rem;
+        font-size: 15px;
+      }
+    }
+    .aboutTech {
+      > img {
+        width: 100%;
+      }
+    }
+  }
+}

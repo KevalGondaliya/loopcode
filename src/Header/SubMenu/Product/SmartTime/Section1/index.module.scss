@@ -1,0 +1,58 @@
+.timePro {
+  padding: 130px 0px 100px;
+  background: #f2f5f8;
+  .container {
+    max-width: 1200px;
+    padding: 0px 15px;
+    margin: 0 auto;
+    .row {
+      @media (max-width: 768px) {
+        margin: 0;
+      }
+      .textCol {
+        padding: 0px 35px;
+        margin-bottom: 30px;
+        .innerTitle {
+          padding-top: 30px;
+
+          > h2 {
+            position: relative;
+            color: #3b566e;
+            font-size: 30px;
+            margin-bottom: 40px;
+            padding-bottom: 15px;
+            font-weight: 400;
+            background: none;
+            line-height: 1.4em;
+            @media (max-width: 1023px) {
+              font-size: 24px;
+              font-weight: 500;
+            }
+          }
+          .textDes {
+            color: #466077;
+            font-size: 18px;
+            line-height: 1.6em;
+            font-weight: 300;
+            margin-bottom: 40px;
+            > span {
+              font-weight: bold;
+            }
+            > img {
+              max-width: 100%;
+            }
+          }
+
+          > h2::before {
+            content: "";
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+            width: 50px;
+            border-bottom: 3px solid #6db3f1;
+          }
+        }
+      }
+    }
+  }
+}

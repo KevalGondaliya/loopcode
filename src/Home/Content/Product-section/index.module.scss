@@ -1,0 +1,89 @@
+.productSection {
+  padding: 90px 0px;
+  .productContainer {
+    max-width: 1200px;
+    padding: 0px 15px;
+    margin: 0 auto;
+    .sectionTitle {
+      margin-bottom: 45px;
+      padding-bottom: 25px;
+      margin-top: -10px;
+      @media (max-width: 767px) {
+        text-align: center;
+      }
+      > h2 {
+        font-size: 30px;
+        color: #3b566e;
+        font-weight: 300;
+        line-height: 1.4em;
+        @media (max-width: 1023px) {
+          font-size: 24px;
+          font-weight: 500;
+        }
+        @media (max-width: 768px) {
+          text-align: left;
+        }
+
+        > span {
+          font-weight: bold;
+        }
+      }
+
+      .productText {
+        font-size: 18px;
+        line-height: 1.6em;
+        font-weight: 300;
+        padding-top: 15px;
+        @media (max-width: 768px) {
+          text-align: left;
+        }
+      }
+    }
+    .productService {
+      @media (max-width: 1023px) {
+        padding: 0 15px;
+        margin-bottom: 30px;
+      }
+      .productInnerBox {
+        padding: 45px 32px 60px;
+        background: url(../../../image/product-bg.png) left top no-repeat;
+        @media (max-width: 1023px) {
+          border: 1px solid #deeefc !important;
+          border-radius: 3px;
+          text-align: center;
+        }
+        .softwareIcon {
+          margin-bottom: 30px !important;
+          > img {
+            vertical-align: middle;
+          }
+        }
+        > h3 {
+          color: #3b566e;
+          font-size: 18px;
+          font-weight: 500;
+          margin-bottom: 15px !important;
+          margin: 0px;
+        }
+        .softwareIconText {
+          margin-bottom: 40px !important;
+          position: relative;
+          font-size: 17px;
+          line-height: 1.6em;
+          font-weight: 300;
+          padding-top: 15px;
+          color: #4d6377;
+        }
+        .softwareIconLinkBox {
+          text-align: end;
+          > a {
+            color: #6f8ba4;
+            font-size: 14px;
+            text-transform: uppercase;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

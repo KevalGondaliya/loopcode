@@ -1,0 +1,34 @@
+.serviceTop {
+  padding-top: 200px;
+  .serviceContainer {
+    max-width: 1200px;
+    padding: 0px 15px;
+    margin: 0 auto;
+    .serviceInner {
+      @media (max-width: 768px) {
+        margin-bottom: 40px;
+        text-align: center;
+      }
+      > h2 {
+        color: #323d47;
+        font-weight: 300;
+        margin: 0px;
+        line-height: 1.4em;
+        font-size: 30px;
+      }
+      > p {
+        line-height: 1.9;
+        color: #757575;
+        font-weight: 300;
+        margin-bottom: 5rem !important;
+        margin-top: 2rem;
+        font-size: 15px;
+      }
+    }
+    .imageInner {
+      > img {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,82 @@
+.mainBanner {
+  background-image: url(../../../image/banner-bg-1.png);
+  z-index: 1;
+  position: relative;
+  padding: 215px 0px 100px;
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .bannerContainer {
+    padding: 0px 15px;
+    margin: 0 auto;
+    max-width: 1200px;
+
+    .bannerCol {
+      margin-bottom: 30px;
+      @media (max-width: 1023px) {
+        text-align: center;
+      }
+
+      .bannerText {
+        padding-top: 100px;
+
+        > h4 {
+          font-size: 18px;
+          color: #1f8ceb;
+          text-transform: capitalize;
+          margin-bottom: 30px;
+        }
+
+        > h2 {
+          font-size: 36px;
+          font-weight: 300;
+          color: #3b566e;
+          margin-bottom: 15px;
+
+          > span {
+            font-weight: bold;
+          }
+        }
+        > p {
+          font-size: 18px;
+          margin-bottom: 50px;
+          color: #6f8ba4;
+        }
+        .textEvent {
+          font-weight: 400;
+          color: #2f4779;
+        }
+        > span {
+          padding: 14px 32px;
+          line-height: 28px;
+          background: #f4f9fe;
+          font-size: 16px;
+          font-weight: 400;
+          border: 1px solid #1f8ceb;
+          color: #3b566e;
+          text-transform: uppercase;
+          text-align: center;
+          font-family: "Heebo", sans-serif;
+          border-radius: 4px;
+          .textIcon {
+            margin-left: 6px;
+            font-size: 14px;
+          }
+        }
+        :hover > span {
+          background: #1f8ceb;
+          color: white;
+        }
+      }
+    }
+    .imageCol {
+      @media (max-width: 1023px) {
+        display: none;
+      }
+      .colImage {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}

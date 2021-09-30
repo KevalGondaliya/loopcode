@@ -1,0 +1,50 @@
+.joinourTop {
+  padding-top: 200px;
+  .container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+    .innerTextPart {
+      @media (max-width: 768px) {
+        margin-bottom: 40px;
+        text-align: center;
+      }
+      > h2 {
+        color: #323d47;
+        font-weight: 300;
+        line-height: 1.4em;
+        margin: 0px;
+        font-size: 30px;
+      }
+      > p {
+        line-height: 1.9;
+        color: #757575;
+        font-weight: 300;
+        margin-bottom: 5rem !important;
+        margin-top: 2rem;
+        font-size: 15px;
+      }
+      .eventInfo {
+        margin-bottom: -30px;
+        > h6 {
+          margin-bottom: 2px;
+          color: #38385f;
+          font-weight: 600;
+          line-height: 1.4em;
+          font-size: 12px;
+        }
+        > p {
+          line-height: 1.9;
+          color: #757575;
+          font-weight: 300;
+          font-size: 15px;
+        }
+      }
+    }
+    .innerImage {
+      > img {
+        max-width: 100%;
+      }
+    }
+  }
+}

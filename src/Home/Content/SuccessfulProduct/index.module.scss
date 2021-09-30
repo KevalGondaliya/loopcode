@@ -1,0 +1,105 @@
+.successfulProduct {
+  background: #f4f9fe;
+  padding: 130px 0px 150px;
+  text-align: center;
+  .productContainer {
+    max-width: 1200px;
+    padding: 0px 15px;
+    margin: 0 auto;
+    .productTitle {
+      margin-bottom: 70px;
+      padding-bottom: 25px;
+      margin-top: -10px;
+      @media (max-width: 767px) {
+        text-align: center;
+      }
+      .icon {
+        line-height: 1em;
+        font-size: 60px;
+        margin-bottom: 30px;
+      }
+      > h2 {
+        font-size: 30px;
+        color: #3b566e;
+        font-weight: 300;
+        line-height: 1.4em;
+        margin: 0px;
+      }
+      .productText {
+        max-width: 720px;
+        margin: 0 auto;
+        font-size: 18px;
+        line-height: 1.6em;
+        font-weight: 300;
+        padding-top: 15px;
+      }
+    }
+    .productMarketing {
+      border-right: 1px #dbeaef solid;
+      border-bottom: 1px #dbeaef solid;
+      position: relative;
+      padding: 25px 0px 30px 0px;
+      .marketingList {
+        padding: 0 6%;
+        > img {
+          margin: 0 auto;
+          vertical-align: middle;
+        }
+        > h3 {
+          padding: 40px 5% 15px 5%;
+          font-size: 20px;
+          font-weight: 300;
+          line-height: 22px;
+          color: #2f2f2f;
+          letter-spacing: 1px;
+          margin: 0;
+          > span {
+            text-transform: uppercase;
+            font-size: 11px;
+            letter-spacing: 0.5px;
+            color: #474848;
+            line-height: 14px;
+            font-weight: 400;
+          }
+        }
+        > p {
+          padding-bottom: 30px;
+          color: #3d607d;
+          font-size: 14px;
+          line-height: 24px;
+          font-weight: 300;
+          letter-spacing: 0.4px;
+        }
+        .knowMore {
+          font-size: 15px;
+          font-weight: 600;
+          color: #666666;
+          text-transform: uppercase;
+          // padding-bottom: 30px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          > span {
+            font-size: 25px;
+            color: #f29a32;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+    .productMarketing::after {
+      width: 12px;
+      height: 12px;
+      display: block;
+      position: absolute;
+      right: -6px;
+      top: -6px;
+      content: "";
+      background: #dbeaef;
+      border-radius: 50%;
+    }
+    .borderBottom {
+      border-bottom: 0;
+    }
+  }
+}
