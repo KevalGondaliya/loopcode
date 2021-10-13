@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import emailjs from "emailjs-com";
 import { Row, Col, Input, Button } from "antd";
 import {
   UserOutlined,
@@ -13,6 +14,36 @@ import styles from "./index.module.scss";
 const { TextArea } = Input;
 
 function Contact() {
+  const [name, setName] = useState();
+  const [contact, setContact] = useState();
+  const [department, setDepartment] = useState();
+  const [email, setEmail] = useState();
+  const [description, setDescription] = useState();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_9p7tqzr",
+        "template_e75cly7",
+        e.target,
+        "user_dH7Lvzi7xFb33xQyNso6L"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          setName("");
+          setContact("");
+          setDepartment("");
+          setEmail("");
+          setDescription("");
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <div className={styles.contact}>
       <div className={styles.container}>
@@ -76,27 +107,50 @@ function Contact() {
               </div>
             </div>
             <div>
-              <form className={styles.contactForm}>
+              <form onSubmit={sendEmail} className={styles.contactForm}>
                 <div className={styles.formGroup}>
-                  <Input placeholder="Name" />
+                  <Input
+                    placeholder="Name"
+                    name="name"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                  />
                 </div>
                 <div className={styles.formGroup}>
-                  <Input placeholder="Contact number" />
+                  <Input
+                    placeholder="Contact number"
+                    name="contact_number"
+                    value={contact}
+                    onChange={(e) => setContact(e.target.value)}
+                  />
                 </div>
                 <div className={styles.formGroup}>
-                  <Input placeholder="-Select Department-" />
+                  <Input
+                    placeholder="-Select Department-"
+                    name="select_department"
+                    value={department}
+                    onChange={(e) => setDepartment(e.target.value)}
+                  />
                 </div>
                 <div className={styles.formGroup}>
-                  <Input placeholder="Emaill Address" />
+                  <Input
+                    placeholder="Emaill Address"
+                    name="user_email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                  />
                 </div>
                 <div className={styles.formGroup}>
                   <TextArea
                     placeholder="Description"
+                    name="description"
+                    value={description}
+                    onChange={(e) => setDescription(e.target.value)}
                     autoSize={{ minRows: 3, maxRows: 5 }}
                   />
                 </div>
                 <div className={styles.formGroup}>
-                  <Button>
+                  <Button htmlType="submit">
                     SUBMIT <RightCircleOutlined />
                   </Button>
                 </div>

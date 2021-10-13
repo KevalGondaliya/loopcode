@@ -1,3 +1,4 @@
+@import "/src/sass/variable.scss";
 .ourClients {
   background: url(../image/banner-bg-1.png);
   background: #ffffff;
@@ -11,7 +12,7 @@
       > h2 {
         position: relative;
         font-size: 30px;
-        color: #3b566e;
+        color: $darkgray;
         font-weight: 400;
         line-height: 1.4em;
         padding-bottom: 20px;
@@ -32,7 +33,7 @@
         margin-left: -25px;
         bottom: 0px;
         width: 50px;
-        border-bottom: 3px solid #6db3f1;
+        border-bottom: 3px solid $brightblue;
       }
     }
     .companyName {
@@ -58,7 +59,7 @@
           text-align: center;
           > h1 {
             line-height: 19px;
-            color: #333333;
+            color: $darkgray;
             font-size: 11px;
             margin-bottom: 10px !important;
             letter-spacing: 1px;

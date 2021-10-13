@@ -8,7 +8,7 @@ function Mission() {
     <div className={styles.missionBloge}>
       <div className={styles.missionContainer}>
         <Row>
-          <Col md={24}>
+          <Col lg={24}>
             <span className={styles.missionLable}>Mission</span>
             <p className={styles.missionP}>
               To become <span>strategic IT partner</span> for worldwide clients
@@ -19,7 +19,7 @@ function Mission() {
           </Col>
           <Col md={24} className={styles.missionText}>
             <Row>
-              <Col md={12} className={styles.textLeft}>
+              <Col lg={12} className={styles.textLeftRight}>
                 <span>
                   At OOZEE we pay special attention to the quality assurance of
                   our all products and services we deliver also we believe that
@@ -27,7 +27,7 @@ function Mission() {
                   as possible with great output.
                 </span>
               </Col>
-              <Col md={12} className={styles.textRight}>
+              <Col lg={12} className={styles.textLeftRight}>
                 <span>
                   Our clients can rely on our products and development services
                   wity working stably and as designed because we put an emphasis

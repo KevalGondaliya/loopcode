@@ -1,70 +1,71 @@
+@import "/src/sass/variable.scss";
 .factSection {
-  //   background-position: 50%;
-  margin-bottom: 50px;
-  margin-top: 52px;
   background: #fafafa;
-  height: 265px;
-  padding: 50px 0;
+  margin: 50px 0;
+  padding: 60px 0;
+
   .container {
-    @media (min-width: 768px) {
-      width: 750px;
-    }
-    @media (min-width: 992px) {
-      width: 970px;
-    }
-    @media (min-width: 1200px) {
-      width: 1170px;
-    }
+    max-width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
     .servicesA {
-      margin-top: 48px;
+      margin-top: 10px;
       .subC {
+        @media (max-width: 767px) {
+          text-align: center;
+          margin-bottom: 15px;
+        }
         .factDetails {
           color: #fff;
-          position: relative;
-          left: 13px;
-          > span {
-            display: flex;
-            font-size: 34px;
-            color: #4b5765;
-            position: absolute;
-            left: 14px;
-            border: 1px solid #6db3f1;
-            border-radius: 35px;
-            width: 70px;
-            height: 70px;
-            padding: 17px;
+          @media (max-width: 767px) {
+            text-align: center;
+            display: block;
           }
-          .factInfo {
-            font-size: 18px;
-            font-weight: 700;
-            margin-bottom: 13px;
-            color: #4b5765;
-            letter-spacing: 1.5px;
-            position: absolute;
-            left: 135px;
-            top: 38px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .fectDetailIcon {
+            @media (max-width: 767px) {
+              text-align: center;
+              margin-bottom: 15px;
+            }
+            > span {
+              font-size: 34px;
+              color: $darkgray;
+              border: 1px solid $brightblue;
+              border-radius: 35px;
+              padding: 11px 17px;
+              margin: 0 15px;
+            }
           }
-          .factCount {
-            font-size: 30px;
-            font-weight: 600;
-            color: #6db3f1;
-            position: absolute;
-            left: 135px;
-            letter-spacing: 0.2px;
+          .feactDetailMain {
+            .factInfo {
+              font-size: 18px;
+              font-weight: 700;
+              margin: 0;
+              color: $darkgray;
+              letter-spacing: 1.5px;
+            }
+            .factCount {
+              font-size: 30px;
+              font-weight: 600;
+              color: $brightblue;
+              letter-spacing: 0.2px;
+              margin: 0;
+            }
           }
-          .factCount::after {
-            position: absolute;
-            content: "";
-            height: 3px;
-            width: 100px;
-            background: #6db3f1;
-            bottom: 0;
-            left: -49px;
-            top: 31px;
-            margin-left: 20px;
-          }
+          // .factCount::after {
+          //   position: absolute;
+          //   content: "";
+          //   height: 3px;
+          //   width: 100px;
+          //   background: #6db3f1;
+          //   bottom: 0;
+          //   left: -49px;
+          //   top: 31px;
+          //   margin-left: 20px;
+          // }
         }
       }
     }

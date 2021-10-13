@@ -1,3 +1,5 @@
+@import "/src/sass/variable.scss";
+
 .joinourTop {
   padding-top: 200px;
   .container {
@@ -10,7 +12,7 @@
         text-align: center;
       }
       > h2 {
-        color: #323d47;
+        color: $darkgray;
         font-weight: 300;
         line-height: 1.4em;
         margin: 0px;
@@ -18,7 +20,7 @@
       }
       > p {
         line-height: 1.9;
-        color: #757575;
+        color: $darkgray;
         font-weight: 300;
         margin-bottom: 5rem !important;
         margin-top: 2rem;
@@ -35,7 +37,7 @@
         }
         > p {
           line-height: 1.9;
-          color: #757575;
+          color: $darkgray;
           font-weight: 300;
           font-size: 15px;
         }

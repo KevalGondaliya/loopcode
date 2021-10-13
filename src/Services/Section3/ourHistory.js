@@ -8,31 +8,44 @@ function OurHistory() {
     <div className={styles.factSection}>
       <div className={styles.container}>
         <Row className={styles.servicesA}>
-          <Col lg={8} className={styles.subC}>
+          <Col xs={24} md={8} lg={8} className={styles.subC}>
             <div className={styles.factDetails}>
-              <span>
-                <TeamOutlined />
-              </span>
-              <p className={styles.factInfo}>OUR CLIENTS</p>
-              <p className={styles.factCount}>200+</p>
+              <div className={styles.fectDetailIcon}>
+                <span>
+                  <TeamOutlined />
+                </span>
+              </div>
+              <div className={styles.feactDetailMain}>
+                <p className={styles.factCount}>200+</p>
+                <p className={styles.factInfo}>OUR CLIENTS</p>
+              </div>
             </div>
           </Col>
-          <Col lg={8} className={styles.subC}>
+          <Col xs={24} md={8} lg={8} className={styles.subC}>
             <div className={styles.factDetails}>
-              <span>
-                <StarFilled />
-              </span>
-              <p className={styles.factInfo}>WORK ON COUNTRIES</p>
-              <p className={styles.factCount}>28+</p>
+              <div className={styles.fectDetailIcon}>
+                <span>
+                  <StarFilled />
+                </span>
+              </div>
+
+              <div className={styles.feactDetailMain}>
+                <p className={styles.factCount}>28+</p>
+                <p className={styles.factInfo}>WORK ON COUNTRIES</p>
+              </div>
             </div>
           </Col>
-          <Col lg={8} className={styles.subC}>
+          <Col xs={24} md={8} lg={8} className={styles.subC}>
             <div className={styles.factDetails}>
-              <span>
-                <RocketFilled />
-              </span>
-              <p className={styles.factInfo}>DELIVER PROJECTS</p>
-              <p className={styles.factCount}>300+</p>
+              <div className={styles.fectDetailIcon}>
+                <span>
+                  <RocketFilled />
+                </span>
+              </div>
+              <div className={styles.feactDetailMain}>
+                <p className={styles.factCount}>300+</p>
+                <p className={styles.factInfo}>DELIVER PROJECTS</p>
+              </div>
             </div>
           </Col>
         </Row>

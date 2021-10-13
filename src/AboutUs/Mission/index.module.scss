@@ -1,3 +1,5 @@
+@import "/src/sass/variable.scss";
+
 .missionBloge {
   padding: 30px 0px 60px 0px;
   .missionContainer {
@@ -5,14 +7,14 @@
     padding: 0px 15px;
     margin: 0 auto;
     .missionLable {
-      color: #4094ed;
+      color: $brightblue;
       font-size: 14px;
       max-width: 100%;
       margin-bottom: 5px;
       font-weight: 700;
     }
     .missionP {
-      color: #333647;
+      color: $darkgray;
       font-weight: 200;
       line-height: 1.2;
       font-size: 40px;
@@ -29,19 +31,10 @@
       @media (max-width: 768px) {
         margin-bottom: 40px;
       }
-      .textLeft {
-        float: left;
+      .textLeftRight {
         > span {
           font-weight: 100 !important;
-          color: #95a4ac !important;
-          font-size: 1.4em !important;
-        }
-      }
-      .textRight {
-        float: right;
-        > span {
-          font-weight: 100 !important;
-          color: #95a4ac !important;
+          color: $darkgray !important;
           font-size: 1.4em !important;
         }
       }

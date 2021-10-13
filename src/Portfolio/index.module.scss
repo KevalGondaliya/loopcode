@@ -1,0 +1,107 @@
+@import "/src/sass/variable.scss";
+
+.portfolioSection {
+  padding: 130px 0;
+  .container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+    .title {
+      overflow: hidden;
+      > h2 {
+        color: $brightblue;
+        font-weight: bold;
+        font-size: 35px;
+        text-transform: uppercase;
+        position: relative;
+        display: inline-block;
+        padding: 0 25px 5px 0;
+        margin: 0 0 18px 0;
+        line-height: 1.7;
+        @media (max-width: 481px) {
+          font-size: 28px;
+          line-height: 1.3;
+        }
+      }
+      > h2::after {
+        content: "-";
+        font-size: 2px;
+        background: rgba(0, 0, 0, 0.1);
+        color: rgba(0, 0, 0, 0.1);
+        height: 4px;
+        display: block;
+        width: 2000%;
+        position: absolute;
+        right: -2000%;
+        top: 50%;
+      }
+    }
+    .text {
+      text-align: center;
+      .textCenter {
+        > p {
+          font-size: 21px;
+          margin-bottom: 30px;
+          font-weight: 300 !important;
+          line-height: 1.4 !important;
+        }
+      }
+      .btnList {
+        margin-bottom: 30px;
+        .btn {
+          text-transform: uppercase;
+          font-weight: 600;
+          border-radius: 3px;
+          background-color: rgba(4, 74, 103, 0.06);
+          color: $brightblue;
+          padding: 9px 16px;
+          height: 40px;
+          margin: 3px 5px;
+        }
+        .btn:hover {
+          background-color: $brightblue;
+          color: #fff;
+        }
+      }
+    }
+    .techList {
+      padding: 0 15px 30px;
+      .insideImage {
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
+        transition: 0.8s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
+          0.8s box-shadow;
+        border: 1px solid lightgray;
+        border-radius: 7px;
+        .imageItem {
+          overflow: hidden;
+          border-radius: 5px;
+          > img {
+            width: 100%;
+            max-width: 100%;
+          }
+        }
+        .itemDesc {
+          text-align: center;
+          padding: 10px;
+          .postCard {
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: $brightblue;
+          }
+          .titleInner {
+            font-size: 22px;
+            color: $darkgray;
+            font-weight: bold;
+            letter-spacing: 1.4px;
+          }
+        }
+      }
+      .insideImage:hover {
+        transform: scale(1.03);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12),
+          0 4px 8px rgba(0, 0, 0, 0.06);
+      }
+    }
+  }
+}

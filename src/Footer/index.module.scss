@@ -1,3 +1,4 @@
+@import "/src/sass/variable.scss";
 .footerStyle {
   background: #e1effa;
   font-size: 18px;
@@ -21,7 +22,7 @@
               }
             }
             .textFooter {
-              color: #466077;
+              color: $darkgray;
               max-width: 360px;
               font-weight: 300;
             }
@@ -35,7 +36,7 @@
               font-size: 24px;
               font-weight: 400;
               text-transform: capitalize;
-              color: #3b566e;
+              color: $darkgray;
               margin-bottom: 20px;
             }
           }
@@ -48,7 +49,7 @@
                 > a {
                   display: inline-block;
                   line-height: 24px;
-                  color: #6f8ba4;
+                  color: $brightblue;
                   font-weight: 300;
                 }
               }

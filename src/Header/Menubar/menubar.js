@@ -1,20 +1,19 @@
 import React, { useState } from "react";
 import { Row, Col, Menu } from "antd";
 import { BrowserRouter as Router, Link } from "react-router-dom";
+import { UnorderedListOutlined } from "@ant-design/icons";
 import logo from "../../image/loop3.png";
 import "antd/dist/antd.css";
 import styles from "./index.module.scss";
 
-const { SubMenu } = Menu;
-
 function Menubar() {
   const [current, setCurrent] = useState();
-  // const [navbar, setNavbar] = useState(false);
-
+  const [showMenu, SetShowMenu] = useState(false);
+  console.log("showMenu", showMenu);
   const handleClick = (e) => {
     setCurrent(e.kry);
   };
-
+  const menu = showMenu ? styles.responsiveMenu : styles.menubar;
   return (
     <div className={styles.navbar}>
       <Row className={styles.setNavbar}>
@@ -28,7 +27,8 @@ function Menubar() {
             onClick={handleClick}
             selectedKeys={[current]}
             mode="horizontal"
-            className={styles.menubar}
+            className={menu}
+            // triggerSubMenuAction={null}
           >
             <Menu.Item key="Home">
               <Link to="/home"> Home </Link>
@@ -66,6 +66,11 @@ function Menubar() {
               <Link to="/contact"> Contact </Link>
             </Menu.Item>
           </Menu>
+          {/* <div className={styles.hamburgerMenu}>
+            <span onClick={() => SetShowMenu(!showMenu)}>
+              <UnorderedListOutlined />
+            </span>
+          </div> */}
         </Col>
       </Row>
     </div>

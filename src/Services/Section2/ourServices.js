@@ -141,7 +141,12 @@ function OurServices() {
                   <div className={styles.servicesF}>
                     <h3 className={styles.title}>Growth Marketing/SEO</h3>
                     <hr />
-                    <p>Search engines use SEO texts to analyze websites...</p>
+                    <p>
+                      {" "}
+                      POC is therefore a prototype that is designed to determine
+                      feasibility, but does not represent deliverables. Search
+                      engines use SEO texts to analyze websites...
+                    </p>
                   </div>
                 </div>
               </div>

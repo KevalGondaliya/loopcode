@@ -55,7 +55,7 @@ function Footer() {
                 <Row>
                   <Col xs={24} md={12}></Col>
                   <Col xs={24} md={12} className={styles.footerCopyright}>
-                    <span>Copyright © 2018, loopcode.com</span>
+                    <span>Copyright © 2021, loopcode.com</span>
                   </Col>
                 </Row>
               </Col>
