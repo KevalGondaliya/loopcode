@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Row, Col, Menu } from "antd";
 import { BrowserRouter as Router, Link } from "react-router-dom";
 import { UnorderedListOutlined } from "@ant-design/icons";
@@ -8,14 +8,30 @@ import styles from "./index.module.scss";
 
 function Menubar() {
   const [current, setCurrent] = useState();
-  const [showMenu, SetShowMenu] = useState(false);
-  console.log("showMenu", showMenu);
+  // const [showMenu, SetShowMenu] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  const handleScroll = () => {
+    const offset = window.scrollY;
+
+    if (offset > 50) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+  });
+
+  console.log("scrolled", scrolled);
+
   const handleClick = (e) => {
     setCurrent(e.kry);
   };
-  const menu = showMenu ? styles.responsiveMenu : styles.menubar;
+  // const menu = showMenu ? styles.responsiveMenu : styles.menubar;
   return (
-    <div className={styles.navbar}>
+    <div className={scrolled ? styles.scrolledNav : styles.navbar}>
       <Row className={styles.setNavbar}>
         <Col xs={18} sm={18} md={6} lg={10} xl={8}>
           <div className={styles.logoBox}>
@@ -27,7 +43,7 @@ function Menubar() {
             onClick={handleClick}
             selectedKeys={[current]}
             mode="horizontal"
-            className={menu}
+            className={styles.menubar}
             // triggerSubMenuAction={null}
           >
             <Menu.Item key="Home">

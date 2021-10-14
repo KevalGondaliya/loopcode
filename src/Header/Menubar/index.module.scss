@@ -1,3 +1,35 @@
+.scrolledNav {
+  left: 0;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  padding: 0px 50px;
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: all 300ms ease;
+  border-bottom: 1px solid rgb(221, 233, 245);
+
+  .setNavbar {
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    margin: auto;
+    .logoBox {
+      padding: 15px 0;
+      .companyLogo {
+        height: 36px;
+      }
+    }
+    .menubar {
+      border-bottom: none !important;
+      display: flex;
+      justify-content: end;
+      font-family: "Heebo", sans-serif;
+      background: none;
+    }
+  }
+}
+
 .navbar {
   position: relative;
   top: 30px;
@@ -16,32 +48,13 @@
         height: 36px;
       }
     }
-    .responsiveMenu {
-      color: black;
-      height: 20px;
-      width: 20px;
-    }
+
     .menubar {
       border-bottom: none !important;
       display: flex;
       justify-content: end;
       font-family: "Heebo", sans-serif;
       background: none;
-      // @media (max-width: 1024px) {
-      //   display: none;
-      // }
-    }
-    .hamburgerMenu {
-      display: none;
-      @media (max-width: 1024px) {
-        display: block;
-        font-size: 2rem;
-        text-align: end;
-      }
     }
   }
-}
-
-.anticon-ellipsis {
-  font-size: 18px;
 }
