@@ -3,7 +3,6 @@
   position: fixed;
   top: 0px;
   width: 100%;
-  padding: 0px 50px;
   background-color: rgba(255, 255, 255, 0.9);
   transition: all 300ms ease;
   border-bottom: 1px solid rgb(221, 233, 245);
@@ -36,6 +35,7 @@
   left: 0px;
   width: 100%;
   transition: all 300ms ease;
+
   .setNavbar {
     max-width: 1200px;
     display: flex;

@@ -126,8 +126,8 @@ function Contact() {
                 </div>
                 <div className={styles.formGroup}>
                   <Input
-                    placeholder="-Select Department-"
-                    name="select_department"
+                    placeholder="Department"
+                    name="department"
                     value={department}
                     onChange={(e) => setDepartment(e.target.value)}
                   />
