@@ -16,12 +16,12 @@ function ApplyJob() {
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs
-      .sendForm(
-        "service_83hosi6",
-        "template_ysq66jb",
-        e.target,
-        "user_dH7Lvzi7xFb33xQyNso6L"
-      )
+      .sendForm
+      // "service_83hosi6",
+      // "template_ysq66jb",
+      // e.target,
+      // "user_dH7Lvzi7xFb33xQyNso6L"
+      ()
       .then(
         (result) => {
           console.log(result.text);
@@ -81,6 +81,8 @@ function ApplyJob() {
                       placeholder="Email"
                       name="user_email"
                       value={email}
+                      type="email"
+                      required
                       className={styles.formControl}
                       onChange={(e) => setEmail(e.target.value)}
                     />
@@ -90,6 +92,8 @@ function ApplyJob() {
                       placeholder="Phone"
                       name="number"
                       value={contact}
+                      type="number"
+                      max="10"
                       className={styles.formControl}
                       onChange={(e) => setContact(e.target.value)}
                     />
@@ -117,6 +121,8 @@ function ApplyJob() {
                   <Input
                     placeholder="Portfolio URL"
                     name="portfolio_url"
+                    type="url"
+                    pattern="https://.*"
                     value={url}
                     className={styles.formControl}
                     onChange={(e) => setUrl(e.target.value)}

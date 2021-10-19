@@ -121,6 +121,7 @@ function Contact() {
                     placeholder="Contact number"
                     name="contact_number"
                     value={contact}
+                    type="number"
                     onChange={(e) => setContact(e.target.value)}
                   />
                 </div>
@@ -137,6 +138,8 @@ function Contact() {
                     placeholder="Emaill Address"
                     name="user_email"
                     value={email}
+                    type="email"
+                    required
                     onChange={(e) => setEmail(e.target.value)}
                   />
                 </div>
