@@ -25,9 +25,13 @@ function ThenksMessage() {
                   <span className={styles.thumImage}>
                     <img src={Profile} alt="Profile" />
                   </span>
-                  <h4>Kevalbhai Gondaliya</h4>
+                  <h4>Keval Gondaliya</h4>
                   <span className={styles.desihnation}>
-                    CEO at LOOPCODE SOLUTION
+                    Founder & CEO
+                  </span>
+                  <h4>Piyush Kakadiya</h4>
+                  <span className={styles.desihnation}>
+                    CTO
                   </span>
                 </div>
               </div>
