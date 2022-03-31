@@ -1,9 +1,11 @@
 import React from "react";
 import { Row, Col } from "antd";
 import { RightCircleOutlined } from "@ant-design/icons";
-import SoftwareIcon from "../../../image/icon-software-development.png";
+
 import WebIcon from "../../../image/icon-web-development.png";
 import MobileIcon from "../../../image/icon-app-development.png";
+import SoftwareIcon from "../../../image/icon-software-development.png";
+
 import "antd/dist/antd.css";
 import styles from "./index.module.scss";
 

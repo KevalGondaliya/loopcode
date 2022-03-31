@@ -19,23 +19,28 @@
           font-size: 20px;
         }
       }
-
+      .userColWidth{
+        display: flex;
+        align-items: center;
+        justify-content: end;
+      
       .ceoProfile {
         padding-top: 25px;
-        text-align: right !important;
+        // text-align: right !important;
         @media (max-width: 1023px) {
           text-align: left !important;
           padding: 40px 0 20px;
         }
         .ceoInfo {
           position: relative;
-          text-align: left;
-          display: inline-block;
           min-height: 66px;
           padding-top: 10px;
           padding-left: 96px;
           font-size: 14px;
           color: $darkgray;
+          &:first-child {
+            margin-bottom: 15px;
+          }
           .thumImage {
             position: absolute;
             left: 0px;
@@ -51,6 +56,7 @@
           }
         }
       }
+    }
     }
     .outerContainer::before {
       content: "";

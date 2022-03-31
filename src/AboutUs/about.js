@@ -1,7 +1,9 @@
 import React from "react";
-import Technology from "./TechnoInnovation/Technology";
+
 import Mission from "./Mission/mission";
+import Technology from "./TechnoInnovation/Technology";
 import MenagementTeam from "./Management/managementTeam";
+
 import styles from "./index.module.scss";
 
 function AboutUs() {

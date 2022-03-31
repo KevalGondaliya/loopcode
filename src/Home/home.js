@@ -1,9 +1,10 @@
 import React from "react";
+
 import Banner from "./Content/Banner/banner";
 import Product from "./Content/Product-section/product";
-import SuccessfulProduct from "./Content/SuccessfulProduct/SuccessfulProduct";
 import Industries from "./Content/Industries/industries";
-import ThenksMessage from "./Content/CEOLoopcode/thanksMessage";
+// import ThenksMessage from "./Content/CEOLoopcode/thanksMessage";
+import SuccessfulProduct from "./Content/SuccessfulProduct/SuccessfulProduct";
 
 function Home() {
   return (
@@ -12,7 +13,7 @@ function Home() {
       <Product />
       <SuccessfulProduct />
       <Industries />
-      <ThenksMessage />
+      {/* <ThenksMessage /> */}
     </div>
   );
 }

@@ -69,6 +69,14 @@
         //   background: $brightblue;
         //   color: white;
         // }
+        .buttonGetStarted{
+          border:1px solid #9eb6c9;
+          border-radius: 8px;
+        }
+        .buttonGetStarted:hover{
+          background-color: #6f8ba4;
+          color: white; 
+        }
       }
     }
     .imageCol {

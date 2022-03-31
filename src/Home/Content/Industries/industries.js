@@ -1,13 +1,14 @@
 import React from "react";
-import { Row, Col } from "antd";
-import Diamond from "../../../image/industries/diamond.png";
-import Jewellery from "../../../image/industries/jewellery.png";
-import RealEstate from "../../../image/industries/real-estate.png";
-import Manufacturing from "../../../image/industries/manufacturing.png";
-import Ecommerce from "../../../image/industries/ecommerce.png";
-import Agriculture from "../../../image/industries/agriculture.png";
-import Printing from "../../../image/industries/printing-lab.png";
-import Textile from "../../../image/industries/textile.png";
+
+import NodeJs from "../../../image/NodeJs.svg";
+import ReactJs from "../../../image/ReactJs.svg";
+import ReactNative from "../../../image/ReactNative.svg";
+import aws from "../../../image/aws.svg";
+import Android from "../../../image/Android.svg";
+import Apple from "../../../image/Apple.svg";
+import GraphQl from "../../../image/GraphQl.svg";
+import MySql from "../../../image/MySql.svg";
+
 import "antd/dist/antd.css";
 import styles from "./index.module.scss";
 
@@ -16,7 +17,7 @@ function Industries() {
     <div className={styles.industriesServe}>
       <div className={styles.industriesContainer}>
         <div className={styles.industriesTitle}>
-          <h2>EXPERTISE INDUSTRIES WE SERVE</h2>
+          <h2>EXPERTISE</h2>
         </div>
 
         <div className={styles.industriesList}>
@@ -25,40 +26,40 @@ function Industries() {
               <a className={styles.linkBox}>
                 <div className={styles.iconBox}>
                   <span>
-                    <img src={Diamond} alt="Diamond" />
+                    <img src={NodeJs} alt="NodeJs" className={styles.Diamond}/>
                   </span>
                 </div>
-                <span className={styles.iconTitle}>Diamond</span>
+                <span className={styles.iconTitle}>NodeJs</span>
               </a>
             </li>
             <li>
               <a className={styles.linkBox}>
                 <div className={styles.iconBox}>
                   <span>
-                    <img src={Jewellery} alt="Jewellery" />
+                    <img src={ReactJs} alt="ReactJs" className={styles.Diamond}/>
                   </span>
                 </div>
-                <span className={styles.iconTitle}>Jewellery</span>
+                <span className={styles.iconTitle}>React</span>
               </a>
             </li>
             <li>
               <a className={styles.linkBox}>
                 <div className={styles.iconBox}>
                   <span>
-                    <img src={RealEstate} alt="RealEstate" />
+                    <img src={ReactNative} alt="ReactNative" className={styles.Diamond}/>
                   </span>
                 </div>
-                <span className={styles.iconTitle}>Real Estate</span>
+                <span className={styles.iconTitle}>React Native</span>
               </a>
             </li>
             <li>
               <a className={styles.linkBox}>
                 <div className={styles.iconBox}>
                   <span>
-                    <img src={Manufacturing} alt="Manufacturing" />
+                    <img src={aws} alt="aws" className={styles.Diamond}/>
                   </span>
                 </div>
-                <span className={styles.iconTitle}>Manufacturing</span>
+                <span className={styles.iconTitle}>AWS</span>
               </a>
             </li>
           </ul>
@@ -67,40 +68,40 @@ function Industries() {
               <a className={styles.linkBox}>
                 <div className={styles.iconBox}>
                   <span>
-                    <img src={Ecommerce} alt="Ecommerce" />
+                    <img src={Android} alt="Android" className={styles.Diamond}/>
                   </span>
                 </div>
-                <span className={styles.iconTitle}>Ecommerce</span>
+                <span className={styles.iconTitle}>android</span>
               </a>
             </li>
             <li>
               <a className={styles.linkBox}>
                 <div className={styles.iconBox}>
                   <span>
-                    <img src={Agriculture} alt="Agriculture" />
+                    <img src={Apple} alt="Apple" className={styles.Diamond}/>
                   </span>
                 </div>
-                <span className={styles.iconTitle}>Agriculture</span>
+                <span className={styles.iconTitle}>ios</span>
               </a>
             </li>
             <li>
               <a className={styles.linkBox}>
                 <div className={styles.iconBox}>
                   <span>
-                    <img src={Printing} alt="Printing Lab" />
+                    <img src={GraphQl} alt="GraphQl" className={styles.Diamond}/>
                   </span>
                 </div>
-                <span className={styles.iconTitle}>Printing Lab</span>
+                <span className={styles.iconTitle}>GraphQl</span>
               </a>
             </li>
             <li>
               <a className={styles.linkBox}>
                 <div className={styles.iconBox}>
                   <span>
-                    <img src={Textile} alt="Textile" />
+                    <img src={MySql} alt="MySql" className={styles.Diamond}/>
                   </span>
                 </div>
-                <span className={styles.iconTitle}>Textile</span>
+                <span className={styles.iconTitle}>MySQL</span>
               </a>
             </li>
           </ul>

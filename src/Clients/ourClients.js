@@ -1,11 +1,13 @@
 import React from "react";
 import { Row, Col } from "antd";
+
+import Eon from "../image/Clients/5.jpg";
 import Mira from "../image/Clients/1.jpg";
-import Finestar from "../image/Clients/2.jpg";
-import JBBrother from "../image/Clients/2_1.jpg";
 import Dirgh from "../image/Clients/3.jpg";
 import Rinkle from "../image/Clients/4.jpg";
-import Eon from "../image/Clients/5.jpg";
+import Finestar from "../image/Clients/2.jpg";
+import JBBrother from "../image/Clients/2_1.jpg";
+
 import styles from "./index.module.scss";
 
 function OurClients() {

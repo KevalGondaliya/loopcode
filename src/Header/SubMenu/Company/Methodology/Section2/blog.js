@@ -1,6 +1,8 @@
 import React from "react";
 import { Col, Row } from "antd";
+
 import Development from "../../../../../image/methodology-at.jpg";
+
 import styles from "./index.module.scss";
 
 function Blog() {

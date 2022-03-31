@@ -1,6 +1,8 @@
 import React from "react";
 import { Col, Row } from "antd";
+
 import Profile from "../../../image/author-thumb-1.png";
+
 import styles from "./index.module.scss";
 
 function ThenksMessage() {
@@ -27,11 +29,16 @@ function ThenksMessage() {
                   </span>
                   <h4>Keval Gondaliya</h4>
                   <span className={styles.desihnation}>
-                    Founder & CEO
+                  Founder & CEO
+                  </span>
+                </div>
+                <div className={styles.ceoInfo} >
+                  <span className={styles.thumImage}>
+                  <img src={Profile} alt="Profile" />
                   </span>
                   <h4>Piyush Kakadiya</h4>
                   <span className={styles.desihnation}>
-                    CTO
+                     Co-Founder & CTO 
                   </span>
                 </div>
               </div>

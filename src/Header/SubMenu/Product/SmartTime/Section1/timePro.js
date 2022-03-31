@@ -1,6 +1,8 @@
 import React from "react";
 import { Row, Col } from "antd";
+
 import SmartTime from "../../../../../image/banner-SmartTimePro.png";
+
 import styles from "./index.module.scss";
 
 function TimePro() {

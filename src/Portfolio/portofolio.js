@@ -1,14 +1,16 @@
 import React from "react";
 import { Button, Col, Row } from "antd";
-import technology from "../image/portfolio/1.jpg";
+
 import design from "../image/portfolio/2.jpg";
-import development from "../image/portfolio/3.jpg";
+import growth from "../image/portfolio/8.jpg";
+import product from "../image/portfolio/6.jpg";
 import creative from "../image/portfolio/4.jpg";
 import research from "../image/portfolio/5.jpg";
-import product from "../image/portfolio/6.jpg";
-import inspiration from "../image/portfolio/7.jpg";
-import growth from "../image/portfolio/8.jpg";
 import platform from "../image/portfolio/9.jpg";
+import technology from "../image/portfolio/1.jpg";
+import development from "../image/portfolio/3.jpg";
+import inspiration from "../image/portfolio/7.jpg";
+
 import styles from "./index.module.scss";
 
 function Portfolio() {

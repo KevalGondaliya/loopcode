@@ -1,5 +1,7 @@
 import React from "react";
+
 import Success from "../../image/career_bg_footer.png";
+
 import styles from "./index.module.scss";
 
 function SuccessBg() {

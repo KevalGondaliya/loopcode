@@ -1,6 +1,7 @@
-import { Col, Row } from "antd";
 import React from "react";
+import { Col, Row } from "antd";
 import { TeamOutlined, StarFilled, RocketFilled } from "@ant-design/icons";
+
 import styles from "./index.module.scss";
 
 function OurHistory() {

@@ -1,6 +1,8 @@
 import React from "react";
 import { Row, Col } from "antd";
+
 import CareerTechno from "../../image/career-techno.png";
+
 import styles from "./index.module.scss";
 
 function JoinOur() {

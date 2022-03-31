@@ -1,15 +1,17 @@
-import React, { useState } from "react";
 import emailjs from "emailjs-com";
+import React, { useState } from "react";
 import { Row, Col, Input, Button } from "antd";
 import {
   UserOutlined,
   ClockCircleOutlined,
   RightCircleOutlined,
 } from "@ant-design/icons";
+
 import Cap from "../image/cap.jpg";
 import FaceBook from "../image/fb.png";
 import LinkedIn from "../image/in.png";
 import Twitter from "../image/twitter1.png";
+
 import styles from "./index.module.scss";
 const { TextArea } = Input;
 
@@ -23,12 +25,12 @@ function Contact() {
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs
-      .sendForm(
-        "service_9p7tqzr",
-        "template_e75cly7",
-        e.target,
-        "user_dH7Lvzi7xFb33xQyNso6L"
-      )
+      // .sendForm(
+      //   "service_9p7tqzr",
+      //   "template_e75cly7",
+      //   e.target,
+      //   "user_dH7Lvzi7xFb33xQyNso6L"
+      // )
       .then(
         (result) => {
           console.log(result.text);

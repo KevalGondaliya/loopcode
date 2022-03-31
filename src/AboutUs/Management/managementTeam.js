@@ -1,8 +1,10 @@
 import React from "react";
 import { Row, Col } from "antd";
 import { LinkedinOutlined } from "@ant-design/icons";
-import team1 from "../../image/team-1.jpg";
+
+import team1 from "../../image/PiyushKakadiya.jpg";
 import footerBg from "../../image/bg-about.png";
+
 import styles from "./index.module.scss";
 
 function ManagementTeam() {
@@ -22,19 +24,19 @@ function ManagementTeam() {
             </div>
           </div>
           <Row>
-            <Col lg={12} xl={8} className={styles.dfCenter}>
+            <Col lg={18} xl={12} className={styles.dfCenter}>
               <div className={styles.teamDescribed}>
                 <div classNam={styles.dFlex}>
                   <div className={styles.teamInfo}>
                     <h5>
-                      Alkesh <br /> Virani
+                      Keval <br /> Gondaliya
                     </h5>
                     <span>
-                      CEO & <br /> Co-founder
+                      CEO & <br /> Founder
                     </span>
                     <ul className={styles.teamSocial}>
                       <li>
-                        <a>
+                        <a href="https://www.linkedin.com/in/keval-gondaliya-5b346aa3/" target="_blank" rel="noreferrer">
                           <LinkedinOutlined />
                         </a>
                       </li>
@@ -49,7 +51,7 @@ function ManagementTeam() {
                     A visionary leader who motivates for continuous growth of an
                     organization. He has done his bachelors from UK, brought in
                     the vision to emerge as one of the innovative partners,
-                    offering services to offshore clients. Mr.Alkesh Virani is a
+                    offering services to offshore clients. Mr.Keval Gondaliya is a
                     fun loving person and firm believer in work, Life and
                     Balance. He is actively involved in sales and business
                     engagement activities with every individual. He believes
@@ -58,19 +60,19 @@ function ManagementTeam() {
                 </div>
               </div>
             </Col>
-            <Col lg={12} xl={8} className={styles.dfCenter}>
+            <Col lg={18} xl={12} className={styles.dfCenter}>
               <div className={styles.teamDescribed}>
                 <div classNam={styles.dFlex}>
                   <div className={styles.teamInfo}>
                     <h5>
-                      Akshay <br /> Gondaliya
+                      Piyush <br /> Kakadiya
                     </h5>
                     <span>
-                      CTO & <br /> Vice Chairman
+                      CTO & <br />Co-Founder
                     </span>
                     <ul className={styles.teamSocial}>
                       <li>
-                        <a>
+                      <a href="https://www.linkedin.com/in/piyush-kakadiya-80841aa3/" target="_blank" rel="noreferrer">
                           <LinkedinOutlined />
                         </a>
                       </li>
@@ -83,8 +85,8 @@ function ManagementTeam() {
                 <div className={styles.description}>
                   <span>
                     With about many years of experience in IT management,
-                    operations, strategic planning & leadership, Mr.Akshay
-                    Gondaliya is also a great writer and an avid thinker. He
+                    operations, strategic planning & leadership, Mr.Piyush
+                    Kakadiya is also a great writer and an avid thinker. He
                     mentor for anyone who is willing to learn in the team and
                     adds extreme value by his in-depth understanding of business
                     and civic regulations arena in India's market. He is
@@ -94,7 +96,7 @@ function ManagementTeam() {
                 </div>
               </div>
             </Col>
-            <Col lg={12} xl={8} className={styles.dfCenter}>
+            {/* <Col lg={12} xl={8} className={styles.dfCenter}>
               <div className={styles.teamDescribed}>
                 <div classNam={styles.dFlex}>
                   <div className={styles.teamInfo}>
@@ -129,7 +131,7 @@ function ManagementTeam() {
                   </span>
                 </div>
               </div>
-            </Col>
+            </Col> */}
           </Row>
         </div>
       </div>

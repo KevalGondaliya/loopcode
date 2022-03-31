@@ -1,6 +1,8 @@
 import React from "react";
 import { Col, Row } from "antd";
+
 import logo from "../image/loop3.png";
+
 import styles from "./index.module.scss";
 
 function Footer() {
@@ -15,14 +17,7 @@ function Footer() {
                   <div className={styles.logo}>
                     <img src={logo} alt="loopcode" />
                   </div>
-                  <div className={styles.textFooter}>
-                    Established in the year 2011 as an IT company with an
-                    intention to concentrate Software, Mobile app and Website
-                    Development solutions. Discover what you can achieve with
-                    India's leading Customized software development solution...
-                    <br />
-                    <a>Read More</a>
-                  </div>
+              
                 </div>
               </Col>
               <Col xs={24} md={12} className={styles.colWidth}>
@@ -35,7 +30,7 @@ function Footer() {
                     <div className={styles.links}>
                       <ul>
                         <li>
-                          <a>About</a>
+                          <a href="/aboutUs">About</a>
                         </li>
                         <li>
                           <a>Customers</a>

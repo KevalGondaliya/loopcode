@@ -1,16 +1,18 @@
 import React from "react";
 import { Col, Row } from "antd";
-import { RightCircleOutlined } from "@ant-design/icons";
-import icon from "../../../image/icon-our-products.png";
-import SmartTime from "../../../image/productlist/SmarTimePro.png";
+
 import Dmfg from "../../../image/productlist/DMfg.png";
-import DSales from "../../../image/productlist/DSales.png";
+import Amex from "../../../image/productlist/Amex.png";
+import icon from "../../../image/icon-our-products.png";
+import { RightCircleOutlined } from "@ant-design/icons";
 import Dimax from "../../../image/productlist/Dimax.png";
+import EMBRO from "../../../image/productlist/EMBRO.png";
 import Jwelex from "../../../image/productlist/Jwelex.png";
+import DSales from "../../../image/productlist/DSales.png";
 import Digital from "../../../image/productlist/Digital.png";
 import DiamFair from "../../../image/productlist/DiamFair.png";
-import Amex from "../../../image/productlist/Amex.png";
-import EMBRO from "../../../image/productlist/EMBRO.png";
+import SmartTime from "../../../image/productlist/SmarTimePro.png";
+
 import styles from "./index.module.scss";
 
 function SuccessfulProduct() {
@@ -40,7 +42,7 @@ function SuccessfulProduct() {
                 cloud-based that's secure, scalable and maintenance-free. Make
                 your employees smile with timely, accurate paychecks.
               </p>
-              <a className={styles.knowMore}>
+              <a href="" className={styles.knowMore}>
                 <span>
                   <RightCircleOutlined />
                 </span>
@@ -86,7 +88,7 @@ function SuccessfulProduct() {
               </a>
             </div>
           </Col>
-          <Col lg={8} className={styles.productMarketing}>
+          {/* <Col lg={8} className={styles.productMarketing}>
             <div className={styles.marketingList}>
               <img src={Dimax} alt="Dimax" />
               <h3>
@@ -208,7 +210,7 @@ function SuccessfulProduct() {
                 Know More
               </a>
             </div>
-          </Col>
+          </Col> */}
         </Row>
       </div>
     </div>

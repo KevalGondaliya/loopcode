@@ -1,5 +1,6 @@
 import { Col, Row } from "antd";
 import React from "react";
+
 import s1 from "../../image/services/s1.svg";
 import s2 from "../../image/services/s2.svg";
 import s3 from "../../image/services/s3.svg";
@@ -29,7 +30,7 @@ function OurServices() {
               <div className={styles.featuredDetails}>
                 <div className={styles.servicesThumb}>
                   <div className={styles.thumbs}>
-                    <img src={s1} />
+                    <img src={s1} alt="s1"/>
                   </div>
                 </div>
                 <div className={styles.media}>
@@ -48,7 +49,7 @@ function OurServices() {
               <div className={styles.featuredDetails}>
                 <div className={styles.servicesThumb}>
                   <div className={styles.thumbs}>
-                    <img src={s2} />
+                    <img src={s2} alt="s2" />
                   </div>
                 </div>
                 <div className={styles.media}>
@@ -68,7 +69,7 @@ function OurServices() {
               <div className={styles.featuredDetails}>
                 <div className={styles.servicesThumb}>
                   <div className={styles.thumbs}>
-                    <img src={s3} />
+                    <img src={s3} alt="s3" />
                   </div>
                 </div>
                 <div className={styles.media}>
@@ -77,7 +78,7 @@ function OurServices() {
                     <hr />
                     <p>
                       We can move your offline store to online and help to
-                      increase the revenue bu proving e-commerce solution.
+                      increase the revenue by proving e-commerce solution.
                       E-Commerce web development has indeed become a necessity
                       instead of a means to drive greater traffic.
                     </p>
@@ -91,7 +92,7 @@ function OurServices() {
               <div className={styles.featuredDetails}>
                 <div className={styles.servicesThumb}>
                   <div className={styles.thumbs}>
-                    <img src={s5} />
+                    <img src={s5} alt="s5" />
                   </div>
                 </div>
                 <div className={styles.media}>
@@ -112,7 +113,7 @@ function OurServices() {
               <div className={styles.featuredDetails}>
                 <div className={styles.servicesThumb}>
                   <div className={styles.thumbs}>
-                    <img src={s4} />
+                    <img src={s4} alt="s4" />
                   </div>
                 </div>
                 <div className={styles.media}>
@@ -134,7 +135,7 @@ function OurServices() {
               <div className={styles.featuredDetails}>
                 <div className={styles.servicesThumb}>
                   <div className={styles.thumbs}>
-                    <img src={s6} />
+                    <img src={s6} alt="s6" />
                   </div>
                 </div>
                 <div className={styles.media}>

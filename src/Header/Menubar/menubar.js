@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Row, Col, Menu } from "antd";
 import { BrowserRouter as Router, Link } from "react-router-dom";
-import { UnorderedListOutlined } from "@ant-design/icons";
 import logo from "../../image/loop3.png";
 import "antd/dist/antd.css";
 import styles from "./index.module.scss";
@@ -35,7 +34,7 @@ function Menubar() {
       <Row className={styles.setNavbar}>
         <Col xs={18} sm={18} md={6} lg={10} xl={8}>
           <div className={styles.logoBox}>
-            <img className={styles.companyLogo} src={logo} />
+            <img className={styles.companyLogo} src={logo} alt="logo"/>
           </div>
         </Col>
         <Col xs={6} sm={6} md={18} lg={14} xl={16}>
@@ -79,7 +78,7 @@ function Menubar() {
               <Link to="/aboutUs"> About Us </Link>
             </Menu.Item>
             <Menu.Item key="Contact">
-              <Link to="/contact"> Contact </Link>
+              <Link to="/contact"> Contact Us </Link>
             </Menu.Item>
           </Menu>
           {/* <div className={styles.hamburgerMenu}>
