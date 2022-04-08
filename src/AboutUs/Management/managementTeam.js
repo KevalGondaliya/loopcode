@@ -43,7 +43,7 @@ function ManagementTeam() {
                     </ul>
                   </div>
                   <div className={styles.teamPhoto}>
-                    <img src={team1} alt="AlkeshVirani" />
+                    <img src={team1} alt="kevalGondaliya" />
                   </div>
                 </div>
                 <div className={styles.description}>
@@ -79,7 +79,7 @@ function ManagementTeam() {
                     </ul>
                   </div>
                   <div className={styles.teamPhoto}>
-                    <img src={team1} alt="AlkeshVirani" />
+                    <img src={team1} alt="PiyushKakadiya" />
                   </div>
                 </div>
                 <div className={styles.description}>
