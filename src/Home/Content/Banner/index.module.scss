@@ -1,12 +1,23 @@
 @import "/src/sass/variable.scss";
 .mainBanner {
-  background-image: url(../../../image/banner-bg-1.png);
   z-index: 1;
   position: relative;
-  padding: 215px 0px 100px;
+  // padding: 215px 0px 100px;
+  padding-top: 120px;
   background-position: left top;
   background-repeat: no-repeat;
   background-size: cover;
+  &::after{
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-image: url(../../../image/banner-bg-1.png);
+    width: 100%;
+    height: 140%;
+    z-index: -1;
+  }
 
   .bannerContainer {
     padding: 0px 15px;
@@ -20,7 +31,8 @@
       }
 
       .bannerText {
-        padding-top: 100px;
+        padding-top: 200px;
+        // text-align: center;
 
         > h4 {
           font-size: 18px;

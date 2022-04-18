@@ -10,7 +10,7 @@ import styles from "./index.module.scss";
 function Banner() {
   return (
     <div className={styles.mainBanner}>
-      <Row className={styles.bannerContainer}>
+      <Row justify="center" className={styles.bannerContainer}>
         <Col xl={12} className={styles.bannerCol}>
           <div className={styles.bannerText}>
             <h1>We help startup, collaborate to innovat.</h1>

@@ -1,6 +1,6 @@
 @import "/src/sass/variable.scss";
 .footerStyle {
-  background: #e1effa;
+  background: #282b3b;
   font-size: 18px;
   border-top: 1px solid #e1effa;
 
@@ -9,18 +9,39 @@
       max-width: 1200px;
       padding: 0 15px;
       margin: 0 auto;
+      .mainFooter {
+        .getInTouch {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          > span {
+            font-size: 38px;
+            font-weight: 800;
+            color: #fff;
+          }
+        }
+        .portProducts {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          > span {
+            color: #878891;
+            letter-spacing: 0.5px;
+          }
+        }
+      }
       .footerOuter {
         position: relative;
-        padding: 120px 0 90px;
+        padding: 50px 0 90px;
         .colWidth {
           // width: 50%;
           .footerColumn {
-            margin-bottom: 30px;
+            // margin-bottom: 30px;
             z-index: 5;
             .logo {
-              > img {
-                height: 36px;
-                margin-bottom: 30px;
+              > span {
+                color: #fff;
+                font-size: 28px;
               }
             }
             .textFooter {
@@ -28,32 +49,117 @@
               max-width: 360px;
               font-weight: 300;
             }
+            .linksName {
+              > div {
+                > a {
+                  margin-bottom: 5px;
+
+                  display: inline-block;
+                  line-height: 24px;
+                  color: #878891;
+                  font-weight: 300;
+                }
+              }
+            }
           }
         }
         .colWidth {
           margin-bottom: 30px;
-          z-index: 5;
+          // z-index: 5;
           .footerColSec {
-            > h3 {
+            > span {
               font-size: 24px;
               font-weight: 400;
               text-transform: capitalize;
-              color: $darkgray;
+              color: #fff;
               margin-bottom: 20px;
             }
           }
           .links {
-            > ul {
+            > div {
               list-style: none;
               padding: 0;
-              > li {
+              > a {
                 margin-bottom: 5px;
-                > a {
-                  display: inline-block;
-                  line-height: 24px;
-                  color: $brightblue;
-                  font-weight: 300;
-                }
+                font-family: 'Montserrat', sans-serif;
+                display: inline-block;
+                line-height: 24px;
+                color: #878891;
+                font-weight: 300;
+                font-family: 'Montserrat', sans-serif;
+              }
+            }
+          }
+        }
+        .colWidth {
+          .footerColThird {
+            > span {
+              font-size: 24px;
+              font-weight: 400;
+              text-transform: capitalize;
+              color: #fff;
+              font-family: 'Montserrat', sans-serif;
+              margin-bottom: 20px;
+            }
+          }
+          .hireDevLinks {
+            > div {
+              > a {
+                margin-bottom: 5px;
+                font-family: 'Montserrat', sans-serif;
+                display: inline-block;
+                line-height: 24px;
+                color: #878891;
+                font-weight: 300;
+              }
+            }
+          }
+        }
+        .footEnd{
+          padding-top: 35px;
+          width: 94%;
+        .imgLogo {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          > img {
+            width: 235px;
+            height: 50px;
+          }
+        }
+        .copyRight {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 52px;
+          > span {
+            color: #878891;
+            letter-spacing: 0.3px;
+            font-weight: 300;
+            font-family: 'Montserrat', sans-serif;
+          }
+        }
+        .socialMedia {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 52px;
+          .svgMain {
+            display: flex;
+            justify-content: space-between;
+            width: 60%;
+            .fbDiv {
+              background-color: #fff;
+              border-radius: 50%;
+              .instagram{
+                background-color: #0871bc;
+                border-radius: 50%;
+              }
+              .twiter{
+                width: 48px;
+                background-color: #0871bc;
+                border-radius: 50%;
+
               }
             }
           }
@@ -71,33 +177,33 @@
           }
         }
       }
-
-      .footerOuter::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 0px;
-        width: 100%;
-        height: 100%;
-        background: url(../image/footer-bg.png) 100px top no-repeat;
-        z-index: 1;
-        @media (max-width: 1140px) {
-          display: none;
-        }
-      }
-      .footerOuter::after {
-        content: "";
-        position: absolute;
-        top: 0px;
-        right: 100%;
-        margin-right: -100px;
-        width: 3000px;
-        height: 100%;
-        background: #ffffff;
-        @media (max-width: 1140px) {
-          display: none;
-        }
-      }
+    }
+      // .footerOuter::before {
+      //   content: "";
+      //   position: absolute;
+      //   left: 0;
+      //   top: 0px;
+      //   width: 100%;
+      //   height: 100%;
+      //   background: url(../image/footer-bg.png) 100px top no-repeat;
+      //   z-index: 1;
+      //   @media (max-width: 1140px) {
+      //     display: none;
+      //   }
+      // }
+      // .footerOuter::after {
+      //   content: "";
+      //   position: absolute;
+      //   top: 0px;
+      //   right: 100%;
+      //   margin-right: -100px;
+      //   width: 3000px;
+      //   height: 100%;
+      //   background: #ffffff;
+      //   @media (max-width: 1140px) {
+      //     display: none;
+      //   }
+      // }
     }
   }
 }
