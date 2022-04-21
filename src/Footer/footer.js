@@ -2,10 +2,10 @@ import React from "react";
 import { Col, Row } from "antd";
 
 import logo from "../image/Asset 6@4x.png";
-import facebook from "../image/facebook.svg";
-import instagram from "../image/instagram.svg";
-import twiter from "../image/twiter.svg";
-import linkedin from "../image/linkedin.svg";
+import facebook from "../image/facebook2.svg";
+import instagram from "../image/instagram2.svg";
+import twiter from "../image/icons8-twitter.svg";
+import linkedin from "../image/linkedin2.svg";
 
 import styles from "./index.module.scss";
 
@@ -130,7 +130,7 @@ function Footer() {
                   <div className={styles.socialMedia}>
                     <div className={styles.svgMain}>
                       <div className={styles.fbDiv}>
-                        <img src={facebook} alt="facebook" />
+                        <img src={facebook} alt="facebook" className={styles.fbIcon}/>
                       </div>
                       <div className={styles.fbDiv}>
                         <img
@@ -138,7 +138,7 @@ function Footer() {
                           alt="instagram"
                           className={styles.instagram}
                         />
-                      </div>
+                      </div>  
                       <div className={styles.fbDiv}>
                         <img
                           src={twiter}

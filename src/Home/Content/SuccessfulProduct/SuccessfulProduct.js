@@ -23,11 +23,11 @@ function SuccessfulProduct() {
           <span className={styles.icon}>
             <img src={icon} alt="icon" />
           </span>
-          <h2>Our Successful Products</h2>
+          <h2>Trusted with us</h2>
           <div className={styles.productText}>
             We have developed successful desktop application product in few
             industries which are used by 300+ customers, also we are providing
-            these product with custom requirement as per client.
+            these product with custom requirement as our client.
           </div>
         </div>
         <Row>

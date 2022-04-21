@@ -1,10 +1,14 @@
 import React from "react";
 import { Row, Col } from "antd";
-import { RightCircleOutlined } from "@ant-design/icons";
 
-import WebIcon from "../../../image/icon-web-development.png";
-import MobileIcon from "../../../image/icon-app-development.png";
-import SoftwareIcon from "../../../image/icon-software-development.png";
+import eCommerce from "../../../image/botsDev.svg";
+import software from "../../../image/softwareDev.svg";
+import WebDev from "../../../image/webDev.svg";
+import healthCare from "../../../image/Healthy.svg";
+import dataAnalysis from "../../../image/ERM.svg";
+import crm from "../../../image/icons8-crm-48.png";
+import logistics from "../../../image/devOps.svg";
+import mobile from "../../../image/mobile.svg";
 
 import "antd/dist/antd.css";
 import styles from "./index.module.scss";
@@ -14,86 +18,199 @@ function Product() {
     <div className={styles.productSection}>
       <div className={styles.productContainer}>
         <div className={styles.sectionTitle}>
-          <h2>
-            The bigger picture for the business in
-            <br /> the form of well-defined <span>digital</span> architecture
-          </h2>
-          <div className={styles.productText}>
-            OOZEE is the top growing software development company in the India
-            that designs and develops custom software applications that drive
-            revenue and delivers flawless user experiences and functionality for
-            mobile apps , web applications and custom software development
-            projects. We are a end to end IT solutions company that offers the
-            following various IT services.
-          </div>
+          <div className={styles.productText}></div>
         </div>
-        <Row>
-          <Col md={12} lg={8} className={styles.productService}>
+        <Row justify="center">
+          <Col md={12} lg={6} className={styles.productService}>
             <div className={styles.productInnerBox}>
               <div className={styles.softwareIcon}>
-                <img src={SoftwareIcon} alt="SoftwareIcon" />
+                <img src={WebDev} alt="SoftwareIcon" />
               </div>
               <h3>
-                <a href="#">Custom Software Development</a>
+                <span>Web Application Development</span>
               </h3>
-              <div className={styles.softwareIconText}>
-                if you have a startup project to launch or any idea for bring
-                customer software solution to your company, or you are intended
-                in software product development, OOZEE is ready to provide and
-                implement full cycle software development services at each step
-                of your project.
+              <div className={styles.softwareText}>
+                <span>
+                  {" "}
+                  Mobile-Friendly Responsive Website <br></br>Designing and
+                  Development using <br></br> next-generation cutting edge{" "}
+                  <br></br> technology
+                </span>
               </div>
-              <div className={styles.softwareIconLinkBox}>
+              {/* <div className={styles.softwareIconLinkBox}>
                 <a>See more </a>
                 <span>
                   <RightCircleOutlined />
                 </span>
-              </div>
+              </div> */}
             </div>
           </Col>
-          <Col md={12} lg={8} className={styles.productService}>
+          <Col md={12} lg={6} className={styles.productService}>
             <div className={styles.productInnerBox}>
               <div className={styles.softwareIcon}>
-                <img src={WebIcon} alt="SoftwareIcon" />
+                <img src={software} alt="SoftwareIcon" />
               </div>
               <h3>
-                <a href="#">Website Development</a>
+                <span>Custom Software Development</span>
               </h3>
-              <div className={styles.softwareIconText}>
-                OOZEE Web application developers team will transform your great
-                ideas to workable web solution. With superior talent web app
-                development skills from CSS markup to complex large-scale
-                systems on board, Our team will create impressive web apps and
-                great start to your Business.
+              <div className={styles.softwareText}>
+                <span>
+                  {" "}
+                  Your one-stop destination for all kinds of software
+                  development. We provide expert consultation and project
+                  management to give you control of your project
+                </span>
               </div>
-              <div className={styles.softwareIconLinkBox}>
+              {/* <div className={styles.softwareIconLinkBox}>
                 <a>See more </a>
                 <span>
                   <RightCircleOutlined />
                 </span>
-              </div>
+              </div> */}
             </div>
           </Col>
-          <Col md={12} lg={8} className={styles.productService}>
+          <Col md={12} lg={6} className={styles.productService}>
             <div className={styles.productInnerBox}>
               <div className={styles.softwareIcon}>
-                <img src={MobileIcon} alt="SoftwareIcon" />
+                <img src={mobile} alt="SoftwareIcon" />
               </div>
               <h3>
-                <a href="#">Mobile App Development</a>
+                <span>Mobile Application Development</span>
               </h3>
-              <div className={styles.softwareIconText}>
-                If you are searching for mobile app development supplier, OOZEE
-                is your perfect match! We are providing Android and IPhone app
-                solutions. our experts will help you to get on the mobile area.
-                We can support you in making an impact in the mobile apps market
+              <div className={styles.softwareText}>
+                <span>
+                  We develop a Hybrid Mobile Application using
+                  React-Native(FACEBOOK) framework, which let your overall
+                  budget down and saves the time
+                </span>
               </div>
-              <div className={styles.softwareIconLinkBox}>
+              {/* <div className={styles.softwareIconLinkBox}>
                 <a>See more </a>
                 <span>
                   <RightCircleOutlined />
                 </span>
+              </div> */}
+            </div>
+          </Col>
+          <Col md={12} lg={6} className={styles.productService}>
+            <div className={styles.productInnerBox}>
+              <div className={styles.softwareIcon}>
+                <img src={logistics} alt="SoftwareIcon" />
               </div>
+              <h3>
+                <span>Devops</span>
+              </h3>
+              <div className={styles.softwareText}>
+                <span>
+                  Our services are designed to provide you with Easy, Efficient,
+                  and Economical logistics solutions. We offer innovative
+                  logistics solutions and supply chain services tailored to your
+                  business operations.
+                </span>
+              </div>
+              {/* <div className={styles.softwareIconLinkBox}>
+                <a>See more </a>
+                <span>
+                  <RightCircleOutlined />
+                </span>
+              </div> */}
+            </div>
+          </Col>
+        </Row>
+        <Row justify="center">
+          <Col md={12} lg={6} className={styles.productService}>
+            <div className={styles.productInnerBox}>
+              <div className={styles.softwareIcon}>
+                <img src={healthCare} alt="SoftwareIcon" />
+              </div>
+              <h3>
+                <span>Healthcare Solutions</span>
+              </h3>
+              <div className={styles.softwareText}>
+                <span>
+                  We help state & federal health and human services find a path
+                  forward with healthcare technology services & products
+                  designed to improve health outcomes.
+                </span>
+              </div>
+              {/* <div className={styles.softwareIconLinkBox}>
+                <a>See more </a>
+                <span>
+                  <RightCircleOutlined />
+                </span>
+              </div> */}
+            </div>
+          </Col>
+          <Col md={12} lg={6} className={styles.productService}>
+            <div className={styles.productInnerBox}>
+              <div className={styles.softwareIcon}>
+                <img src={eCommerce} alt="SoftwareIcon" />
+              </div>
+              <h3>
+                <span>Bots Development</span>
+              </h3>
+              <div className={styles.softwareText}>
+                <span>
+                  {" "}
+                  We can move your offline store to an online store and help you
+                  increase revenue by trying out an e-commerce solution. In
+                  fact, eCommerce web development has become a necessity rather
+                  than a means of generating increased traffic.
+                </span>
+              </div>
+              {/* <div className={styles.softwareIconLinkBox}>
+                <a>See more </a>
+                <span>
+                  <RightCircleOutlined />
+                </span>
+              </div> */}
+            </div>
+          </Col>
+
+          <Col md={12} lg={6} className={styles.productService}>
+            <div className={styles.productInnerBox}>
+              <div className={styles.softwareIcon}>
+                <img src={dataAnalysis} alt="SoftwareIcon" />
+              </div>
+              <h3>
+                <span>ERP System</span>
+              </h3>
+              <div className={styles.softwareText}>
+                <span>
+                  We develop a custom ERP solution for you that suits your
+                  business so you can increase your company's overall
+                  efficiency.
+                </span>
+              </div>
+              {/* <div className={styles.softwareIconLinkBox}>
+                <a>See more </a>
+                <span>
+                  <RightCircleOutlined />
+                </span>
+              </div> */}
+            </div>
+          </Col>
+          <Col md={12} lg={6} className={styles.productService}>
+            <div className={styles.productInnerBox}>
+              <div className={styles.softwareIcon}>
+                <img src={crm} alt="SoftwareIcon" />
+              </div>
+              <h3>
+                <span>CRM Systems</span>
+              </h3>
+              <div className={styles.softwareText}>
+                <span>
+                  We develop fully customizable CRM systems for your business to
+                  increase overall efficiency, boost sales and improve customer
+                  relationships.
+                </span>
+              </div>
+              {/* <div className={styles.softwareIconLinkBox}>
+                <a>See more </a>
+                <span>
+                  <RightCircleOutlined />
+                </span>
+              </div> */}
             </div>
           </Col>
         </Row>
