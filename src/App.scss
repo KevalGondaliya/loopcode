@@ -1,6 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&family=Josefin+Sans:ital,wght@0,100;0,500;1,100&family=Montserrat:wght@400;500&family=Poppins:wght@100&family=Quicksand:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&family=Josefin+Sans:ital,wght@0,100;0,500;1,100&family=Montserrat:wght@400;500&family=Poppins:wght@100&family=Quicksand:wght@300&display=swap");
 .App {
   text-align: center;
+}
+
+.alice-carousel__prev-btn,
+.alice-carousel__next-btn {
+  position: absolute;
+  bottom: -80px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 11111;
+  border-radius: 50%;
+  background-color: #70bef7;
+  &__inactive {
+    > span {
+      &::after {
+        color: white;
+      }
+    }
+  }
+}
+.alice-carousel__prev-btn-item, .alice-carousel__next-btn-item {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  &:hover {
+    color: #282c34 !important;
+  }
+}
+.alice-carousel__prev-btn {
+  right: 60px;
+}
+.alice-carousel__next-btn {
+  right: 0;
 }
 
 .App-logo {
@@ -13,8 +48,8 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-body{
-  font-family: 'Inter', sans-serif !important;
+body {
+  font-family: "Inter", sans-serif !important;
 }
 .App-header {
   background-color: #282c34;

@@ -1,7 +1,6 @@
-import { Col } from 'antd'
+
 import React from 'react'
 
-import WebDev from "../image/webDev.svg";
 
 import styles from './index.module.scss'
 function ServicesCom(props) {
