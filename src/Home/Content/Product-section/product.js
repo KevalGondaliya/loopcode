@@ -18,6 +18,7 @@ function Product() {
     <div className={styles.productSection}>
       <div className={styles.productContainer}>
         <div className={styles.sectionTitle}>
+          <span>Services</span>
           <div className={styles.productText}></div>
         </div>
         <Row justify="center">
@@ -37,12 +38,6 @@ function Product() {
                   <br></br> technology
                 </span>
               </div>
-              {/* <div className={styles.softwareIconLinkBox}>
-                <a>See more </a>
-                <span>
-                  <RightCircleOutlined />
-                </span>
-              </div> */}
             </div>
           </Col>
           <Col md={12} lg={6} className={styles.productService}>
@@ -61,12 +56,6 @@ function Product() {
                   management to give you control of your project
                 </span>
               </div>
-              {/* <div className={styles.softwareIconLinkBox}>
-                <a>See more </a>
-                <span>
-                  <RightCircleOutlined />
-                </span>
-              </div> */}
             </div>
           </Col>
           <Col md={12} lg={6} className={styles.productService}>
@@ -84,12 +73,6 @@ function Product() {
                   budget down and saves the time
                 </span>
               </div>
-              {/* <div className={styles.softwareIconLinkBox}>
-                <a>See more </a>
-                <span>
-                  <RightCircleOutlined />
-                </span>
-              </div> */}
             </div>
           </Col>
           <Col md={12} lg={6} className={styles.productService}>
@@ -108,12 +91,6 @@ function Product() {
                   business operations.
                 </span>
               </div>
-              {/* <div className={styles.softwareIconLinkBox}>
-                <a>See more </a>
-                <span>
-                  <RightCircleOutlined />
-                </span>
-              </div> */}
             </div>
           </Col>
         </Row>
@@ -133,12 +110,6 @@ function Product() {
                   designed to improve health outcomes.
                 </span>
               </div>
-              {/* <div className={styles.softwareIconLinkBox}>
-                <a>See more </a>
-                <span>
-                  <RightCircleOutlined />
-                </span>
-              </div> */}
             </div>
           </Col>
           <Col md={12} lg={6} className={styles.productService}>
@@ -151,19 +122,12 @@ function Product() {
               </h3>
               <div className={styles.softwareText}>
                 <span>
-                  {" "}
                   We can move your offline store to an online store and help you
                   increase revenue by trying out an e-commerce solution. In
                   fact, eCommerce web development has become a necessity rather
                   than a means of generating increased traffic.
                 </span>
               </div>
-              {/* <div className={styles.softwareIconLinkBox}>
-                <a>See more </a>
-                <span>
-                  <RightCircleOutlined />
-                </span>
-              </div> */}
             </div>
           </Col>
 
@@ -182,12 +146,6 @@ function Product() {
                   efficiency.
                 </span>
               </div>
-              {/* <div className={styles.softwareIconLinkBox}>
-                <a>See more </a>
-                <span>
-                  <RightCircleOutlined />
-                </span>
-              </div> */}
             </div>
           </Col>
           <Col md={12} lg={6} className={styles.productService}>
@@ -205,12 +163,6 @@ function Product() {
                   relationships.
                 </span>
               </div>
-              {/* <div className={styles.softwareIconLinkBox}>
-                <a>See more </a>
-                <span>
-                  <RightCircleOutlined />
-                </span>
-              </div> */}
             </div>
           </Col>
         </Row>

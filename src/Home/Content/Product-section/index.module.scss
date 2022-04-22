@@ -7,8 +7,12 @@
     margin: 0 auto;
     .sectionTitle {
       margin-bottom: 45px;
-      padding-bottom: 25px;
+      // padding-bottom: 25px;
       margin-top: -10px;
+      font-size: 52px;
+      color: #0871bc !important;
+      font-family: 'Inter', sans-serif;
+      text-align: center;
       @media (max-width: 767px) {
         text-align: center;
       }
@@ -73,8 +77,9 @@
           }
         }
         .softwareText{
-          font-size: 14px;
-          font-family: 'Montserrat', sans-serif;
+          font-size: 15px;
+          letter-spacing: 0.1px;
+          font-family: 'Inter', sans-serif;
           color: gray;
         }
         > h3 {
