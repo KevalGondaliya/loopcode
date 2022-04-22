@@ -11,8 +11,8 @@ function Home() {
     <div>
       <Banner />
       <Product />
-      <SuccessfulProduct />
       <Industries />
+      <SuccessfulProduct />
       {/* <ThenksMessage /> */}
     </div>
   );

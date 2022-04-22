@@ -29,7 +29,7 @@ function Industries() {
                     <img src={NodeJs} alt="NodeJs" className={styles.Diamond}/>
                   </span>
                 </div>
-                <span className={styles.iconTitle}>NodeJs</span>
+                {/* <span className={styles.iconTitle}>NodeJs</span> */}
               </a>
             </li>
             <li>
@@ -39,7 +39,7 @@ function Industries() {
                     <img src={ReactJs} alt="ReactJs" className={styles.Diamond}/>
                   </span>
                 </div>
-                <span className={styles.iconTitle}>React</span>
+                {/* <span className={styles.iconTitle}>React</span> */}
               </a>
             </li>
             <li>
@@ -49,7 +49,7 @@ function Industries() {
                     <img src={ReactNative} alt="ReactNative" className={styles.Diamond}/>
                   </span>
                 </div>
-                <span className={styles.iconTitle}>React Native</span>
+                {/* <span className={styles.iconTitle}>React Native</span> */}
               </a>
             </li>
             <li>
@@ -59,7 +59,7 @@ function Industries() {
                     <img src={aws} alt="aws" className={styles.Diamond}/>
                   </span>
                 </div>
-                <span className={styles.iconTitle}>AWS</span>
+                {/* <span className={styles.iconTitle}>AWS</span> */}
               </a>
             </li>
           </ul>
@@ -71,7 +71,7 @@ function Industries() {
                     <img src={Android} alt="Android" className={styles.Diamond}/>
                   </span>
                 </div>
-                <span className={styles.iconTitle}>android</span>
+                {/* <span className={styles.iconTitle}>android</span> */}
               </a>
             </li>
             <li>
@@ -81,7 +81,7 @@ function Industries() {
                     <img src={Apple} alt="Apple" className={styles.Diamond}/>
                   </span>
                 </div>
-                <span className={styles.iconTitle}>ios</span>
+                {/* <span className={styles.iconTitle}>ios</span> */}
               </a>
             </li>
             <li>
@@ -91,7 +91,7 @@ function Industries() {
                     <img src={GraphQl} alt="GraphQl" className={styles.Diamond}/>
                   </span>
                 </div>
-                <span className={styles.iconTitle}>GraphQl</span>
+                {/* <span className={styles.iconTitle}>GraphQl</span> */}
               </a>
             </li>
             <li>
@@ -101,7 +101,7 @@ function Industries() {
                     <img src={MySql} alt="MySql" className={styles.Diamond}/>
                   </span>
                 </div>
-                <span className={styles.iconTitle}>MySQL</span>
+                {/* <span className={styles.iconTitle}>MySQL</span> */}
               </a>
             </li>
           </ul>

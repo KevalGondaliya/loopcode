@@ -105,7 +105,7 @@ function SuccessfulProduct() {
           {/* <span className={styles.icon}>
             <img src={icon} alt="icon" />
           </span> */}
-          <h2>Trusted with us</h2>
+          <span>Trusted with us</span>
           <div className={styles.productText}>
             We have developed successful desktop application product in few
             industries which are used by 300+ customers, also we are providing
@@ -115,6 +115,12 @@ function SuccessfulProduct() {
             <Row justify="center">
               <Col lg={24}>
                 <AliceCarousel
+                  autoPlay={true}
+                  animationType={"fade-out"}
+                  animationEasingFunction={"ease-in-out"}
+                  autoPlayInterval={500}
+                  animationDuration={1000}
+                  infinite={true}
                   mouseTracking
                   items={items}
                   responsive={clientWork}
