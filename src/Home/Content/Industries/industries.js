@@ -8,6 +8,8 @@ import Android from "../../../image/Android.svg";
 import Apple from "../../../image/Apple.svg";
 import GraphQl from "../../../image/GraphQl.svg";
 import MySql from "../../../image/MySql.svg";
+import mongoDB from "../../../image/mongoDB.svg";
+import mateor from "../../../image/Meteor.svg";
 
 import "antd/dist/antd.css";
 import styles from "./index.module.scss";
@@ -26,7 +28,7 @@ function Industries() {
               <a className={styles.linkBox}>
                 <div className={styles.iconBox}>
                   <span>
-                    <img src={NodeJs} alt="NodeJs" className={styles.Diamond}/>
+                    <img src={NodeJs} alt="NodeJs" className={styles.Diamond} />
                   </span>
                 </div>
                 {/* <span className={styles.iconTitle}>NodeJs</span> */}
@@ -36,7 +38,11 @@ function Industries() {
               <a className={styles.linkBox}>
                 <div className={styles.iconBox}>
                   <span>
-                    <img src={ReactJs} alt="ReactJs" className={styles.Diamond}/>
+                    <img
+                      src={ReactJs}
+                      alt="ReactJs"
+                      className={styles.Diamond}
+                    />
                   </span>
                 </div>
                 {/* <span className={styles.iconTitle}>React</span> */}
@@ -46,7 +52,11 @@ function Industries() {
               <a className={styles.linkBox}>
                 <div className={styles.iconBox}>
                   <span>
-                    <img src={ReactNative} alt="ReactNative" className={styles.Diamond}/>
+                    <img
+                      src={ReactNative}
+                      alt="ReactNative"
+                      className={styles.Diamond}
+                    />
                   </span>
                 </div>
                 {/* <span className={styles.iconTitle}>React Native</span> */}
@@ -56,10 +66,24 @@ function Industries() {
               <a className={styles.linkBox}>
                 <div className={styles.iconBox}>
                   <span>
-                    <img src={aws} alt="aws" className={styles.Diamond}/>
+                    <img src={aws} alt="aws" className={styles.Diamond} />
                   </span>
                 </div>
                 {/* <span className={styles.iconTitle}>AWS</span> */}
+              </a>
+            </li>
+            <li>
+              <a className={styles.linkBox}>
+                <div className={styles.iconBox}>
+                  <span>
+                    <img
+                      src={Android}
+                      alt="Android"
+                      className={styles.Diamond}
+                    />
+                  </span>
+                </div>
+                {/* <span className={styles.iconTitle}>android</span> */}
               </a>
             </li>
           </ul>
@@ -68,17 +92,7 @@ function Industries() {
               <a className={styles.linkBox}>
                 <div className={styles.iconBox}>
                   <span>
-                    <img src={Android} alt="Android" className={styles.Diamond}/>
-                  </span>
-                </div>
-                {/* <span className={styles.iconTitle}>android</span> */}
-              </a>
-            </li>
-            <li>
-              <a className={styles.linkBox}>
-                <div className={styles.iconBox}>
-                  <span>
-                    <img src={Apple} alt="Apple" className={styles.Diamond}/>
+                    <img src={Apple} alt="Apple" className={styles.Diamond} />
                   </span>
                 </div>
                 {/* <span className={styles.iconTitle}>ios</span> */}
@@ -88,7 +102,11 @@ function Industries() {
               <a className={styles.linkBox}>
                 <div className={styles.iconBox}>
                   <span>
-                    <img src={GraphQl} alt="GraphQl" className={styles.Diamond}/>
+                    <img
+                      src={GraphQl}
+                      alt="GraphQl"
+                      className={styles.Diamond}
+                    />
                   </span>
                 </div>
                 {/* <span className={styles.iconTitle}>GraphQl</span> */}
@@ -98,7 +116,27 @@ function Industries() {
               <a className={styles.linkBox}>
                 <div className={styles.iconBox}>
                   <span>
-                    <img src={MySql} alt="MySql" className={styles.Diamond}/>
+                    <img src={MySql} alt="MySql" className={styles.Diamond} />
+                  </span>
+                </div>
+                {/* <span className={styles.iconTitle}>MySQL</span> */}
+              </a>
+            </li>
+            <li>
+              <a className={styles.linkBox}>
+                <div className={styles.iconBox}>
+                  <span>
+                    <img src={mongoDB} alt="MySql" className={styles.Diamond} />
+                  </span>
+                </div>
+                {/* <span className={styles.iconTitle}>MySQL</span> */}
+              </a>
+            </li>
+            <li>
+              <a className={styles.linkBox}>
+                <div className={styles.iconBox}>
+                  <span>
+                    <img src={mateor} alt="MySql" className={styles.Diamond} />
                   </span>
                 </div>
                 {/* <span className={styles.iconTitle}>MySQL</span> */}

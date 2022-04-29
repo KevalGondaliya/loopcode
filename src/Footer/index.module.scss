@@ -28,6 +28,9 @@
           > span {
             color: #878891;
             letter-spacing: 0.5px;
+            @media (max-width: 425px) {
+              text-align: center;
+            }
           }
         }
       }
@@ -67,6 +70,9 @@
         .colWidth {
           margin-bottom: 30px;
           // z-index: 5;
+          @media (max-width: 425px) {
+            text-align: center;
+          }
           .footerColSec {
             > span {
               font-size: 24px;
@@ -116,77 +122,77 @@
             }
           }
         }
-        .footEnd{
+        .footEnd {
           padding-top: 35px;
           width: 94%;
-        .imgLogo {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          > img {
-            width: 235px;
-            height: 50px;
-          }
-        }
-        .copyRight {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          height: 52px;
-          > span {
-            color: #878891;
-            letter-spacing: 0.3px;
-            font-weight: 300;
-            // font-family: 'Montserrat', sans-serif;
-          }
-        }
-        .socialMedia {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          height: 52px;
-          .svgMain {
+          .imgLogo {
             display: flex;
-            justify-content: space-between;
-            width: 60%;
-            .fbDiv {
-              background-color: #0871bc;
-              border-radius: 50%;
+            justify-content: center;
+            align-items: center;
+            > img {
+              width: 235px;
               height: 50px;
-              width: 50px;
+            }
+          }
+          .copyRight {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 52px;
+            > span {
+              color: #878891;
+              letter-spacing: 0.3px;
+              font-weight: 300;
+              // font-family: 'Montserrat', sans-serif;
+            }
+          }
+          .socialMedia {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 52px;
+            .svgMain {
               display: flex;
-              align-items: center;
-              justify-content: center;
-              >img{
-                height: 25px;
-              }
-              // .instagram{
-              //   background-color: #0871bc;
-              //   border-radius: 50%;
-              // }
-              // .twiter{
-              //   width: 48px;
-              //   background-color: #0871bc;
-              //   border-radius: 50%;
+              justify-content: space-between;
+              width: 60%;
+              .fbDiv {
+                background-color: #0871bc;
+                border-radius: 50%;
+                height: 50px;
+                width: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                > img {
+                  height: 25px;
+                }
+                // .instagram{
+                //   background-color: #0871bc;
+                //   border-radius: 50%;
+                // }
+                // .twiter{
+                //   width: 48px;
+                //   background-color: #0871bc;
+                //   border-radius: 50%;
 
-              // }
+                // }
+              }
+            }
+          }
+        }
+        .footerCopyright {
+          margin-bottom: 30px;
+          z-index: 5;
+          > span {
+            font-size: 16px;
+            font-weight: 300;
+            padding-top: 0px;
+            @media (max-width: 767px) {
+              padding-top: 0;
             }
           }
         }
       }
-      .footerCopyright {
-        margin-bottom: 30px;
-        z-index: 5;
-        > span {
-          font-size: 16px;
-          font-weight: 300;
-          padding-top: 0px;
-          @media (max-width: 767px) {
-            padding-top: 0;
-          }
-        }
-      }
-    }
       // .footerOuter::before {
       //   content: "";
       //   position: absolute;

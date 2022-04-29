@@ -97,6 +97,9 @@ function SuccessfulProduct() {
     1024: {
       items: 4,
     },
+    524: {
+      items: 3,
+    },
   };
   return (
     <div className={styles.successfulProduct}>
